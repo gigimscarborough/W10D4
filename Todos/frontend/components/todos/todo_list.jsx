@@ -1,5 +1,6 @@
 import React from 'react'
 import TodoListItem from './todo_list_item'
+import TodoForm from '../todo_list/todo_form'
 
 const TodoList = (props) => {
 
@@ -12,6 +13,7 @@ const TodoList = (props) => {
         <div>
         <ul>
         {listItems}
+        <TodoForm receiveTodo={props.receiveTodo}/>
         </ul>
         </div>
     )
