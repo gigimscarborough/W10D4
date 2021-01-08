@@ -6,7 +6,7 @@ class TodoForm extends React.Component {
         super(props);
         this.receiveTodo = props.receiveTodo.bind(this)
         this.state = {
-            word: ""
+            word: "",
             id: uniqueId()
         }
    
