@@ -1,7 +1,7 @@
 const TodoList = (props) => {
 
-    const listItems = props.todos.map((todo) => 
-        <li>{todo}</li>
+    const listItems = props.todos.map((todo, i) => 
+        <li key={i}>{todo}</li>
     );
 
     return(

@@ -29,11 +29,8 @@ const todosReducer = (state = initialState, action) => {
             debugger
             return nextState;
         case RECEIVE_TODO:
-            debugger
             nextState = Object.assign({}, state)
-            debugger
             nextState[action.todo.id] = action.todo
-            debugger
             return nextState
             default:
                 return state;
